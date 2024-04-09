@@ -7,7 +7,7 @@ const checkBtn = document.querySelector(".solve-btn");
 
 checkBtn.addEventListener("click", function (event) {
   const number = parseInt(input.value);
-  // coditional statements for from validation
+  // coditional statements for form validation
   if (number < 0) {
     result.textContent = "Invalid input.";
     input.style.borderColor = "red";
@@ -30,7 +30,6 @@ checkBtn.addEventListener("click", function (event) {
       result.textContent = `${number}! is ${ans}`;
       input.style.borderColor = "black";
       result.style.borderColor = "black";
-      // result.textContent = ans;
     }
   }
 });
